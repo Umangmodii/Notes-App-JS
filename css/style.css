@@ -1,0 +1,24 @@
+/* body{
+    background-color:floralwhite
+} */
+.rounded-pill{
+    border-radius: 50px;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.shadow-sm{
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.288);
+}
+.noteCard{
+    width: 31.3%;
+}
+@media (min-width:769px) and (max-width:1024px){
+    .noteCard{
+        width: 47%;
+    }
+}
+@media (max-width:768px){
+    .noteCard{
+        width: 120%;
+    }
+}
