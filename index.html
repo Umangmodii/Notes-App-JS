@@ -12,7 +12,7 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary bg-gradient">
-        <a class="navbar-brand" href="#">Simple Notes</a>
+        <a class="navbar-brand" href="#">Notes App </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -30,7 +30,12 @@
         </div>
     </nav>
     <div class="container my-3">
-        <h2 class="text-center">Simple Notes App </h2>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="https://fillnotes.netlify.app/">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page"> Notes App</li>
+            </ol>
+          </nav>
         <br>
         <div class="card shadow-sm rounded-0">
             <div class="card-body">
@@ -46,11 +51,30 @@
             </div>
         </div>
         <hr>
-        <h2 class="text-center">Notes List</h2>
+        <h2 class="text-center" id="date1">Notes List</h2>
         <hr>
         <div id="notes" class="row container-fluid m-2">
         </div>
     </div>
+
+<script>
+    const d = new Date();
+    document.getElementById("date1").innerHTML = d;
+    </script>
+
+
+
+
+    <footer class="bg-light text-center text-lg-start">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color:#007bff">
+          © 2023 - 2024 Copyright:
+          <a class="text-dark" href="https://fillnotes.netlify.app/">fillnotes.netlify.app</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+
+      <br>
 
     <!----------JAVASCRIPT--------->
     <script src="js/jquery.min.js"></script>
